@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>สร้างภาพโปรไฟล์ ประเพณีรับน้องขึ้นดอย ๖๐</title>
+
+    <meta property="og:site_name" content="สร้างภาพโปรไฟล์ ประเพณีรับน้องขึ้นดอย ๖๐" />
+    <meta property="og:url" content="/" />
+    <meta property="og:title" content="ฟรี! สร้างภาพโปรไฟล์ ประเพณีรับน้องขึ้นดอย ๖๐" />
+    <meta property="og:image" content="images/og.png" />
+    <meta property="og:description" content="ฟรี! สร้างภาพโปรไฟล์ ตามกระแสรับน้องขึ้นดอย ง่ายมาก เพียงเลือกภาพของคุณ และดาวน์โหลดได้ทันที" />
+    <meta property="og:locale" content="th_TH" />
+    <meta property="og:type" content="website" />
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kanit">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.30/css/uikit.min.css">
+
+    <link rel="stylesheet" href="styles.css">
+
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o), m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+        ga('create', 'UA-33058582-1', 'auto', {
+            'name': 'Main'
+        });
+        ga('send', 'pageview');
+        ga('Main.send', 'event', 'สร้างรูปเรารักในหลวง', 'view', '');
+    </script>
+</head>
+<body>
+    <header class="uk-margin">
+        <h1>สร้างภาพโปรไฟล์ ประเพณีรับน้องขึ้นดอย ๖๐</h1>
+    </header>
+
+    <main class="uk-container">
+        <div uk-alert class="uk-alert-warning">
+            เว็บนี้ทำงานได้ดีที่สุดเมื่อเปิดด้วย Google Chrome บนคอมพิวเตอร์
+        </div>
+        <div uk-alert class="uk-alert-primary">
+            <b>ประกาศ</b> เรากำลังต้องการ Template เพิ่มเติม โดยเฉพาะ Template ประจำคณะทุกคณะ เพื่อนำมาใส่เป็นตัวเลือกหลายๆ แบบให้ในเว็บ 
+            ใครมีฝีมือ (และขยัน) ส่ง Template เป็นไฟล์ PNG ขนาด 800x800 มาให้ผมได้ที่ <a href="mailto:earthchie@gmail.com">earthchie@gmail.com</a> ผมจะนำมาเพิ่ม พร้อมติดเครดิตผู้ออกแบบให้ครับ
+        </div>
+        <div uk-grid>
+            <div class="uk-width-1-2@m">
+                <canvas id="canvas" width="800" height="800" style="width:100%;height:100%;"></canvas>
+            </div>
+            <div class="uk-width-1-2@m">
+                <div id="step-1" class="uk-margin">
+                    <h2>1. กรุณาเลือกภาพที่จะใช้</h2>
+                    <div uk-grid>
+                        <div class="uk-width-1-1 uk-text-center">
+                            <div uk-form-custom class="uk-width-1-1">
+                                <input id="file_selected" type="file" accept="image/*">
+                                <button class="uk-button uk-button-secondary uk-width-1-1" type="button" tabindex="-1">
+                                    <i class="material-icons">folder</i> เลือกภาพจากในเครื่อง
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="step-2" class="uk-margin">
+                    <h2>2. ปรับแต่ง</h2>
+                    <h3 class="font-1-2-em">ใช้เมาส์คลิกลากที่ภาพทางซ้ายเพื่อจัดตำแหน่ง</h3>
+                    <h3 class="font-1-1-em uk-text-center">เลื่อนเพื่อปรับขนาดของภาพ</h3>
+                    <input type="range" id="scale" min="0.5" max="3" step="0.01" class="uk-width-1-1 uk-range">
+                    <div uk-grid>
+                        <div class="uk-width-1-2">
+                            <button id="rotate-left" class="uk-button uk-button-secondary">
+                                <span uk-icon="icon:refresh" style="transform:scale(-1,1)"></span> หมุนซ้าย
+                            </button>
+                        </div>
+                        <div class="uk-width-1-2 uk-text-right">
+                            <button id="rotate-right" class="uk-button uk-button-secondary">
+                                <span uk-icon="icon:refresh"></span> หมุนขวา
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div id="step-3" class="uk-margin">
+                    <h2>3. ดาวน์โหลด</h2>
+
+                    <div class="fb-like" data-layout="standard" data-action="like" data-size="large" data-show-faces="true" data-share="true"></div>
+
+                    <button id="download" uk-toggle="target: #download-modal" class="uk-button uk-button-large color-light bg-green font-title font-2-em uk-width-1-1">
+                        <i class="material-icons">file_download</i> บันทึกภาพ
+                    </button>
+                </div>
+                <hr>
+                <p class="font-title">
+                    - สร้างเว็บด้วย ♥️ และ ☕ &nbsp;โดย <a href="https://fb.me/earthchie" target="_blank">Earthchie</a><br>
+                    - โลโก้ลูกช้างขึ้นดอย<s>ขโมย</s>ยืมมาจากเพจ <a href="https://fb.me/SMOCMU" target="_blank">สโมสรนักศึกษามหาวิทยาลัยเชียงใหม่</a><br>
+                    - ขอบคุณภาพจาก <a href="https://www.instagram.com/p_namtarn/" target="_blank">@p_namtarn</a><br>
+                    - ขอบคุณแรงผลักดันจาก<a href="https://fb.me/mkcrazyfunny" target="_blank">พี่ปิง</a> จนเกิดเป็นเว็บนี้ขึ้นมา<br>
+                    - ท่านสามารถศึกษา Source Code ของเว็บนี้ได้ที่ <a href="https://github.com/earthchie/cmu_profile" target="_blank">Github</a>
+                </p>
+            </div>
+        </div>
+
+        <div class="fb-comments" data-numposts="10" data-width="100%;" width="100%" style="width:100%;"></div>
+    </main>
+
+    <div id="download-modal" uk-modal>
+        <div class="uk-modal-dialog uk-modal-body">
+            <button class="uk-modal-close-default" type="button" uk-close></button>
+            
+            <h2 class="uk-text-center">นำไปตั้งเป็นรูปโปรไฟล์<br>ใน Facebook, LINE ได้ทันที เย้</h2>
+            
+            <a href="" crossOrigin="Anonymous" class="uk-button uk-button-large bg-green color-light uk-width-1-1" download="my_profile.jpg">
+                <i class="material-icons">file_download</i> Download ดาวน์โหลด <span class="blink">คลิก</span>
+            </a>
+                    
+            <h3 class="uk-text-center">หรือคลิกขวา/แตะค้างที่รูป<br>แล้วเลือกบันทึกภาพ</h3>
+            <img src="">
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fabric.js/1.7.17/fabric.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.30/js/uikit.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.30/js/uikit-icons.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
